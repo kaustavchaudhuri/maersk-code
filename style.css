@@ -1,0 +1,180 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+#button-container {
+    text-align: center;
+}
+
+.developer-details {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#developer-name {
+    font-style: italic;
+    text-align: center;
+}
+
+.application-name {
+    text-align: center;
+}
+
+#items-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.action-button {
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    border: 0px;
+    color: #FFFFFF;
+    background-color: #72C3DC;
+    border-radius: 6px;
+    box-shadow: 0 4px #2B8EAD;
+}
+
+/* Media query for large Screens */
+
+@media all and (min-width: 650px) {
+
+    body {
+        background-color: #EFEFEF;
+    }
+
+    #items-container {
+        border-top: 7px solid #A9A9A9;
+    }
+
+    .application-name {
+        display: none;
+    }
+
+    #number-box-container {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+
+    }
+
+    #button-container {
+        padding-top: 5vh;
+    }
+
+    .action-button {
+        height: 5vw;
+        width: 17vw;
+        margin-bottom: 3vw;
+        font-size: 2vw;
+
+    }
+
+    .grid-item {
+        height: 17vh;
+        font-size: 3vh;
+        text-align: center;
+        color: #FFFFFF;
+        align-content: center;
+        padding-top: 70px;
+    }
+
+    .box-value {
+        font-size: 6vw;
+    }
+
+    #data-1 {
+        background-color: #72C3DC;
+    }
+
+    #data-2,
+    #data-4 {
+        background-color: #2B8EAD;
+    }
+
+    #data-3,
+    #data-5,
+    #data-9 {
+        background-color: #2F454E;
+    }
+
+    #data-8 {
+        background-color: #6F98A8;
+    }
+
+    #data-6,
+    #data-7 {
+        background-color: #BFBFBF;
+    }
+
+}
+
+/* Media Query for smaller screen size */
+
+@media all and (max-width: 650px) {
+
+    .application-name {
+        background-color: #2F454E;
+        color: #FFFFFF;
+        font-size: 6vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .grid-item {
+        background-color: #EFEFEF;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        height: 5vh;
+        padding-top: 9px;
+    }
+
+    .action-button {
+        height: 7vw;
+        width: 18vw;
+        margin-bottom: 2vw;
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+
+    #items-container {
+        grid-template-columns: 100%;
+    }
+
+    #number-box-container {
+        grid-row: 2;
+    }
+
+    #button-container {
+        grid-row: 1;
+    }
+
+    #number-box-container {
+        padding: 20px;
+    }
+
+    #data-1,
+    #data-8 {
+        border-left: 20px solid #72C3DC;
+    }
+
+    #data-2,
+    #data-4 {
+        border-left: 20px solid #2B8EAD;
+    }
+
+    #data-3,
+    #data-5,
+    #data-9 {
+        border-left: 20px solid #2F454E;
+    }
+
+    #data-6,
+    #data-7 {
+        border-left: 20px solid #BFBFBF;
+    }
+
+}
